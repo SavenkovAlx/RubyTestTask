@@ -1,0 +1,1 @@
+# CyberCraft Trainee Ruby Developer Test Task
