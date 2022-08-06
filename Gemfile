@@ -72,3 +72,4 @@ end
 gem "graphql", "~> 2.0"
 gem "graphiql-rails", group: :development
 gem "octokit", "~> 4.0"
+gem "dotenv-rails"

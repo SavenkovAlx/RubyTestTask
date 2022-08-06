@@ -1,17 +1,24 @@
 module Types
   class QueryType < Types::BaseObject
-    # Add `node(id: ID!) and `nodes(ids: [ID!]!)`
-    include GraphQL::Types::Relay::HasNodeField
-    include GraphQL::Types::Relay::HasNodesField
 
-    # Add root-level fields here.
-    # They will be entry points for queries on your schema.
+    field :github, GithubType, "Find a username and repos by login" do
+      argument :login, String, required: true
+    end
 
-    # TODO: remove me
-    field :test_field, String, null: false,
-      description: "An example field added by the generator"
-    def test_field
-      "Hello World!"
+    def github(login:)
+      client = Octokit::Client.new \
+    :client_id     => ENV['CLIENT_ID'],
+    :client_secret => ENV['CLIENT_SECRET']
+
+      user = client.user login
+
+      repos = client.repos(user.login, query: { sort: 'asc'})
+      repos.each_with_index { |rep,index| repos[index]=rep.name  }
+
+      {"username"=>user.name,
+        "repos"=>repos,
+       }
+
     end
   end
 end
