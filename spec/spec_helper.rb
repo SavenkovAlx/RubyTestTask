@@ -1,6 +1,6 @@
 require 'webmock/rspec'
 
-Dir[Rails.root.join("spec/support/**/*.rb")].each {|f| require f}
+Dir["#{File.dirname(__FILE__)}/support/**/*.rb"].sort.each { |f| require f }
 
 RSpec.configure do |config|
   # rspec-expectations config goes here. You can use an alternate
