@@ -1,0 +1,80 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.github.com/users/svnalx
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/vnd.github.v3+json
+      User-Agent:
+      - Octokit Ruby Gem 4.25.1
+      Content-Type:
+      - application/json
+      Authorization:
+      - Basic NTI4MGE0Y2NhMGZiNzIwOWViMjQ6ZTU5YjBmNzQ3ODFhNGM0ZTdlODVmYzYyNTY0MzI2YjZiZTNmMThiOQ==
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - GitHub.com
+      Date:
+      - Wed, 10 Aug 2022 16:45:33 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Cache-Control:
+      - public, max-age=60, s-maxage=60
+      Vary:
+      - Accept
+      - Accept-Encoding, Accept, X-Requested-With
+      Etag:
+      - W/"f8c33f1a355b5eaae1867c41a87c0eeec61ab65f2bcea3ff61f54376ff0f32ba"
+      Last-Modified:
+      - Sun, 03 Jul 2022 06:30:20 GMT
+      X-Github-Media-Type:
+      - github.v3; format=json
+      X-Ratelimit-Limit:
+      - '5000'
+      X-Ratelimit-Remaining:
+      - '4992'
+      X-Ratelimit-Reset:
+      - '1660151947'
+      X-Ratelimit-Used:
+      - '8'
+      X-Ratelimit-Resource:
+      - core
+      Access-Control-Expose-Headers:
+      - ETag, Link, Location, Retry-After, X-GitHub-OTP, X-RateLimit-Limit, X-RateLimit-Remaining,
+        X-RateLimit-Used, X-RateLimit-Resource, X-RateLimit-Reset, X-OAuth-Scopes,
+        X-Accepted-OAuth-Scopes, X-Poll-Interval, X-GitHub-Media-Type, X-GitHub-SSO,
+        X-GitHub-Request-Id, Deprecation, Sunset
+      Access-Control-Allow-Origin:
+      - "*"
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubdomains; preload
+      X-Frame-Options:
+      - deny
+      X-Content-Type-Options:
+      - nosniff
+      X-Xss-Protection:
+      - '0'
+      Referrer-Policy:
+      - origin-when-cross-origin, strict-origin-when-cross-origin
+      Content-Security-Policy:
+      - default-src 'none'
+      X-Github-Request-Id:
+      - 7D01:F11D:3338E8B:3447A76:62F3E0AC
+    body:
+      encoding: ASCII-8BIT
+      string: '{"login":"svnalx","id":52368090,"node_id":"MDQ6VXNlcjUyMzY4MDkw","avatar_url":"https://avatars.githubusercontent.com/u/52368090?v=4","gravatar_id":"","url":"https://api.github.com/users/svnalx","html_url":"https://github.com/svnalx","followers_url":"https://api.github.com/users/svnalx/followers","following_url":"https://api.github.com/users/svnalx/following{/other_user}","gists_url":"https://api.github.com/users/svnalx/gists{/gist_id}","starred_url":"https://api.github.com/users/svnalx/starred{/owner}{/repo}","subscriptions_url":"https://api.github.com/users/svnalx/subscriptions","organizations_url":"https://api.github.com/users/svnalx/orgs","repos_url":"https://api.github.com/users/svnalx/repos","events_url":"https://api.github.com/users/svnalx/events{/privacy}","received_events_url":"https://api.github.com/users/svnalx/received_events","type":"User","site_admin":false,"name":"Alex
+        Crist","company":null,"blog":"alex-crist.com","location":null,"email":null,"hireable":null,"bio":null,"twitter_username":null,"public_repos":9,"public_gists":1,"followers":2,"following":7,"created_at":"2019-06-30T05:56:54Z","updated_at":"2022-07-03T06:30:20Z"}'
+  recorded_at: Wed, 10 Aug 2022 16:45:33 GMT
+recorded_with: VCR 6.1.0
