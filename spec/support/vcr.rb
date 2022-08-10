@@ -6,5 +6,6 @@ VCR.configure do |c|
     decode_compressed_response: true
   }
   c.cassette_library_dir = 'vcr/cassettes'
+  c.allow_http_connections_when_no_cassette = true
 end
 
